@@ -1,0 +1,93 @@
+ Server: 37.148.204.115  -   Database: nnanl
+ 
+-- phpMyAdmin SQL Dump
+-- version 2.11.11.3
+-- http://www.phpmyadmin.net
+--
+-- Host: 37.148.204.115
+-- Generation Time: May 14, 2016 at 10:44 AM
+-- Server version: 5.5.43
+-- PHP Version: 5.1.6
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `nnanl`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `members`
+--
+
+CREATE TABLE IF NOT EXISTS `members` (
+  `orgid` int(11) NOT NULL AUTO_INCREMENT,
+  `orgname` varchar(200) NOT NULL DEFAULT 'organisation name',
+  `contact` varchar(100) NOT NULL DEFAULT 'Mr. XY Z',
+  `addressline1` varchar(150) NOT NULL DEFAULT 'xyz straat 2',
+  `adressline2` varchar(150) NOT NULL,
+  `postalcode` varchar(10) NOT NULL DEFAULT '1111 AX ',
+  `city` varchar(150) NOT NULL DEFAULT 'Roermond',
+  `country` varchar(100) NOT NULL DEFAULT 'Netherlands',
+  `mobile` varchar(20) NOT NULL DEFAULT '06-123456789',
+  `phone` varchar(20) DEFAULT '000-123-4567',
+  `website` varchar(100) NOT NULL DEFAULT 'www.xyz.com',
+  `email` varchar(100) NOT NULL DEFAULT 'john@example.com',
+  `remarks` varchar(200) NOT NULL DEFAULT 'Notes ,,,,',
+  PRIMARY KEY (`orgid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
+
+--
+-- Dumping data for table `members`
+--
+
+INSERT INTO `members` VALUES(1, 'Abiriba Communal Improvement Union The Netherlands', 'Ishawa', '', '', '', '', '', '', '', '', '', 'Remarks');
+INSERT INTO `members` VALUES(2, 'Abia Union The Netherlands', '', '', '', '', '', 'Netherlands', '', '', 'Www.voice.com', '', 'Notes ,,,,');
+INSERT INTO `members` VALUES(3, 'Accord Club of Holland', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(4, 'Afemai Care Foundation', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(5, 'Afemai Forum Netherlands', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(6, 'Akwa-Cross Association', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(7, 'ANION', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.theanion.org', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(8, 'Edo International Association', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(9, 'Esan Community in The Netherlands', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(10, 'Idemili Progressive Union', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Idemili Progressive Union is a union for people from the old Idemili Local Government Area of Anambra State in Nigeria. It is a non-profit organisation. We meet every last Sunday of the month at 16:00');
+INSERT INTO `members` VALUES(11, 'Igbo Cultural Association of Nigeria', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(12, 'Igbo Union The Netherlands', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(13, 'Nadwat-UL-Ahil Society of Nigeria', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(14, 'Nigeria Union Breda', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(15, 'Nigerian Women Association', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(16, 'Nigerian Women of Integrity', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(17, 'Oduduwa Descendants Association of Netherlands', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(18, 'Ohaneze Ndi Igbo', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(19, 'Oodua Progressive Union', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(20, 'Otu-Iviedo in The Netherlands', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(21, 'Owerri People Association', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(22, 'PDP Holland Chapter', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(23, 'Stichting Orange Men''s Club', 'Mr. XY Z', 'xyz straat 2', '', '1111 AX ', 'Roermond', 'Netherlands', '06-123456789', '000-123-4567', 'www.xyz.com', 'john@example.com', 'Notes ,,,,');
+INSERT INTO `members` VALUES(24, 'Pan-African Media & Development Agency', 'Apostles Helen Ruth & Larry Dorkenoo', 'Frankemaheerd 2', '', '1102 AN ', 'Amsterdam', 'Netherlands', '06-123456789', '000-123-4567', 'www.radiovoiceofnaija.org', 'voiceofnaija@live.com', 'Notes ,,,,');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `notices`
+--
+
+CREATE TABLE IF NOT EXISTS `notices` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `eventdescrip` varchar(200) NOT NULL,
+  `eventdate` date NOT NULL,
+  `url` varchar(200) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Events table' AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `notices`
+--
+
+INSERT INTO `notices` VALUES(1, 'Business seminar', '2015-07-10', 'http://http://www.nnanl.org');
+INSERT INTO `notices` VALUES(2, 'Annual Family Picnic', '2015-07-31', 'http://http://');
+INSERT INTO `notices` VALUES(3, 'Retreat', '2015-08-31', '');
+INSERT INTO `notices` VALUES(4, 'Houston Convention', '2015-09-27', 'http://');
+INSERT INTO `notices` VALUES(5, 'End-of-year Party', '2015-12-22', 'http://');
+

@@ -1,0 +1,23 @@
+<?php session_start(); ?>
+<?php error_reporting(E_ERROR | E_PARSE); ?>
+<?php include_once("analyticstracking.php"); ?>
+
+
+<!--form action="test.php" method="post" target="box" enctype="multipart/form-data"-->
+<form action="processUploads.php" method="post" target="box" enctype="multipart/form-data">
+	Select <b>Executive image</b> to upload:
+	<br><input type="file" name="fileToUpload" id="fileToUpload"><br>
+		<input type="hidden" name="uploadType" value="exco">
+	</td></tr>
+	
+	<tr><td>
+		Name of exec.:<br>
+		<input type="text" name="excoName"  size="30" placeholder="Name of executive" required><br>
+		Title/post:<br>
+		<input type="text" name="office" size="30"  placeholder="Title/post"  required><br>
+		Start tenure (Year):<br>
+		<input type="number" name="start_tenure" size="4" value="<?php $_SESSION['start_tenure'];?>" required><br>
+		<input type="submit" value="Submit data" name="submit">
+   	</td></tr>
+	</table>
+</form>

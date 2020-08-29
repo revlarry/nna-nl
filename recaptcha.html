@@ -1,0 +1,16 @@
+
+<!-- your HTML content -->
+<head>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+ <form method="post" action="verify.php">
+   <?php
+     require_once('recaptchalib.php');
+     $publickey = "6LdWnAgTAAAAAD-1eAu5xfgp2XtXC-R9BBCVNMiY"; // you got this from the signup page
+     echo recaptcha_get_html($publickey);
+   ?>
+   <input type="submit" />
+   
+   <div class="g-recaptcha" data-sitekey="6LdWnAgTAAAAAD-1eAu5xfgp2XtXC-R9BBCVNMiY"></div>
+ </form><br>
+<!-- more of your HTML content -->

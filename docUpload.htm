@@ -1,0 +1,9 @@
+<?php session_start(); ?>
+<?php error_reporting(E_ERROR | E_PARSE); ?>
+<?php include_once("analyticstracking.php"); ?>
+
+<form action="docUploadProcess.php" method="post" target="photobox" enctype="multipart/form-data">
+    Select a&nbspdocument <b>(Doc | Docx | PDF)</b> file to upload:
+	<br><input type="file" name="fileToUpload" id="fileToUpload"><br>
+   <br> <input type="submit" value="Upload file" name="submit">
+</form>
